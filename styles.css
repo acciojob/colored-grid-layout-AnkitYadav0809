@@ -1,1 +1,43 @@
 /*  your css code here. If applicable */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px; /* Optional: adds space between items */
+    height: 100vh; /* Full height */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4vw;
+    background-color: green; /* Default color */
+}
+
+/* Specific item styles */
+.item1 {
+    grid-column: span 4; /* Span all columns */
+}
+
+.item2 {
+    grid-row: span 4; /* Span all rows */
+}
+
+.item4 {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+.item5 {
+    grid-column: span 2; /* Span 2 columns */
+}
+
+.item10 {
+    grid-column: span 3; /* Span 3 columns */
+}
